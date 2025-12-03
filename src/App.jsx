@@ -15,6 +15,7 @@ import logo from "./assets/logo.jpg"; // tu logo
 
 export default function App() {
   const [navScrolled, setNavScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   // Navbar con fondo al hacer scroll
   useEffect(() => {
@@ -62,13 +63,25 @@ export default function App() {
             <img src={logo} alt="Viclui Catering" />
             <span>Viclui Catering</span>
           </div>
-          <nav className="nav-links">
-            <button onClick={() => scrollToSection("inicio")}>Inicio</button>
-            <button onClick={() => scrollToSection("nosotros")}>Nosotros</button>
-            <button onClick={() => scrollToSection("servicios")}>Servicios</button>
-            <button onClick={() => scrollToSection("galeria")}>Galería</button>
-            <button onClick={() => scrollToSection("contacto")}>Contacto</button>
-          </nav>
+          {/* BOTÓN MENÚ HAMBURGUESA (solo móvil) */}
+<div
+  className="hamburger"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+{/* MENÚ DESPLEGABLE */}
+<nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+  <button onClick={() => { scrollToSection("inicio"); setMenuOpen(false); }}>Inicio</button>
+  <button onClick={() => { scrollToSection("nosotros"); setMenuOpen(false); }}>Nosotros</button>
+  <button onClick={() => { scrollToSection("servicios"); setMenuOpen(false); }}>Servicios</button>
+  <button onClick={() => { scrollToSection("galeria"); setMenuOpen(false); }}>Galería</button>
+  <button onClick={() => { scrollToSection("contacto"); setMenuOpen(false); }}>Contacto</button>
+</nav>
+
         </div>
       </header>
 
