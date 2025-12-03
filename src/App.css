@@ -411,7 +411,7 @@ html, body {
     display: flex;
     position: absolute;
     right: 20px;
-    top: 25px; /* ← AJUSTA AQUÍ PARA BAJARLO MÁS */
+    top: 23px; /* ← AJUSTA AQUÍ PARA BAJARLO MÁS */
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
