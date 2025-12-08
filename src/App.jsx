@@ -202,15 +202,15 @@ export default function App() {
               Cuéntanos qué tipo de evento tienes en mente y prepararemos una
               propuesta personalizada.
             </p>
-            <p><strong>Teléfono:</strong> <a href="tel:+34600111222">600 11 12 22</a></p>
-            <p><strong>Email:</strong> <a href="mailto:contacto@viclui.com">contacto@viclui.com</a></p>
+            <p><strong>Teléfono:</strong> <a href="tel:+34682812336">682 81 23 36</a></p>
+            <p><strong>Email:</strong> <a href="mailto:eventosviclui@gmail.com">eventosviclui@gmail.com</a></p>
           </div>
           <div className="contact-box">
             <h3>¿Hablamos de tu evento?</h3>
             <p>
               Envíanos un correo o llámanos directamente y te asesoraremos sin compromiso.
             </p>
-            <button onClick={() => (window.location = "mailto:contacto@viclui.com")}>
+            <button onClick={() => (window.location = "mailto:eventosviclui@gmail.com")}>
               Escribir un email
             </button>
           </div>
@@ -236,8 +236,8 @@ export default function App() {
           </div>
           <div className="footer-col">
             <h4>Contacto</h4>
-            <p>Tel: 600 11 12 22</p>
-            <p>Email: contacto@viclui.com</p>
+            <p>Tel: 682 81 23 36</p>
+            <p>Email: eventosviclui@gmail.com</p>
           </div>
         </div>
         <div className="footer-bottom">
